@@ -1,0 +1,40 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "content_scripts": [
+    {
+      "js": [ "lib/jq/jquery-2.1.1.min.js", "lib/ga/analytics.js", "btCage/btCage.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
+  ],
+  "background": {
+    "scripts": [ "btCage/bg.js", "lib/big/bg.js" ]
+  },
+  "description": "__MSG_appDesc__",
+  "default_locale":"en",
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appName__",
+  "version": "1.85",
+  "default_locale": "en",
+  "icons": { "128": "./btCage/128.ico", "16": "./btCage/16.ico" },
+  "permissions": [
+    "storage",
+    "tabs",
+    "contextMenus",
+    "webRequest",
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*",
+    "webNavigation",
+    "webRequestBlocking",
+    "cookies",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "options_page": "btCage/options/options.html",
+  "options_ui": {
+    "page": "btCage/options/options.html",
+    "chrome_style": true
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
