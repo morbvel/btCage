@@ -79,7 +79,7 @@ function main() {
               'http://traste.duckdns.org/fotos/37.jpg',
               'http://traste.duckdns.org/fotos/38.jpg',
               'http://traste.duckdns.org/fotos/39.jpg',
-              'http://traste.duckdns.org/fotos/40.jpg'
+              'http://traste.duckdns.org/fotos/40.jpg',
               'http://traste.duckdns.org/fotos/41.jpg'
             ],
 
